@@ -8,38 +8,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <script src="./script.js"></script>
 </head>
 <body>
     <div id="game">
         <div id="player1">
             <h2>Player 1</h2>
             <p class="symbol">X</p>
-            <p>Wins: 0</p>
+            <p id="wins-1">Wins: 0</p>
         </div>
 
         <div id="cells">
+            <div class="cell" id="0"></div>
             <div class="cell" id="1"></div>
             <div class="cell" id="2"></div>
             <div class="cell" id="3"></div>
-            <div class="cell" id="4">O</div>
-            <div class="cell" id="5">X</div>
+            <div class="cell" id="4"></div>
+            <div class="cell" id="5"></div>
             <div class="cell" id="6"></div>
             <div class="cell" id="7"></div>
             <div class="cell" id="8"></div>
-            <div class="cell" id="9"></div>
         </div>
 
         <div id="player2">
             <h2>Player 2</h2>
             <p class="symbol">O</p>
-            <p>Wins: 0</p>
+            <p id="wins-2">Wins: 0</p>
         </div>
     </div>
 
     <div id="game-messages">
         <p id="display">Welcome to my Tic-Tac-Toe project! Enjoy!</p>
+        <p id="score"></p>
+        <p id="current-player"></p>
         <p>Made by <a href="https://github.com/Benicio-Sabarros">Ben</a></p>
     </div> 
+    <script src="./script.js"></script>
 </body>
 </html>
