@@ -2,3 +2,40 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#game{
+    display: flex;
+    margin-top: 40px;
+    gap: 15px;
+}
+
+.symbol{
+    font-size: 30px;
+}
+
+#cells{
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+}
+
+.cell{
+    border: 10px solid black;
+    font-size: 150px;
+    font-family: "Varela Round", sans-serif;
+    text-align: center;
+    text-justify: center;
+}
+
+#game-messages p{
+    margin-top: 15px;
+    justify-content: center;
+}

@@ -17,6 +17,11 @@
     function GameController(playerOneName = "Player 1", playerTwoName = "Player 2"){
         const board = Gameboard(); // create a new gameboard object
 
+        const cells = document.querySelectorAll();
+        for(const cell of cells){
+            
+        }
+
         const players = [ 
             {
                 name: playerOneName,
@@ -107,4 +112,3 @@
         }
     }
     var game = GameController();
-    console.log(window.game);
